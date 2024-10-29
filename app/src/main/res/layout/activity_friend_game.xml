@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrieeendGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/NameGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Крестики-нолики"
+            android:backgroundTint="@color/white"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/playerTurnTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Игрок 1 очередь Х"
+            android:backgroundTint="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button00"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red"
+                android:textSize="30sp"
+                app:cornerRadius="3dp"
+                android:contentDescription="Кнопка в строке 0, столбец 0"/>
+
+            <Button
+                android:id="@+id/button01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red"
+                android:textSize="30sp"
+                app:cornerRadius="3dp"
+                android:contentDescription="Кнопка в строке 0, столбец 1"/>
+
+            <Button
+                android:id="@+id/button02"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red"
+                android:textSize="30sp"
+                app:cornerRadius="3dp"
+                android:contentDescription="Кнопка в строке 0, столбец 2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red"
+                android:textSize="30sp"
+                app:cornerRadius="3dp"
+                android:contentDescription="Кнопка в строке 1, столбец 0"/>
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red"
+                android:textSize="30sp"
+                app:cornerRadius="3dp"
+                android:contentDescription="Кнопка в строке 1, столбец 1"/>
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red"
+                android:textSize="30sp"
+                app:cornerRadius="3dp"
+                android:contentDescription="Кнопка в строке 1, столбец 2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red"
+                android:textSize="30sp"
+                app:cornerRadius="3dp"
+                android:contentDescription="Кнопка в строке 2, столбец 0"/>
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red"
+                android:textSize="30sp"
+                app:cornerRadius="3dp"
+                android:contentDescription="Кнопка в строке 2, столбец 1"/>
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red"
+                android:textSize="30sp"
+                app:cornerRadius="3dp"
+                android:contentDescription="Кнопка в строке 2, столбец 2"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statisticsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            android:text="Статистика"
+            android:textSize="23sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green"
+            android:onClick="resetGame"
+            android:text="Новая игра"
+            android:textSize="25sp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/back_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green"
+            android:text="Назад"
+            android:textSize="25sp"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

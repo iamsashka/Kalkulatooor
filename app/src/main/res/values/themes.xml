@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Kresticinolici" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/lightpink</item>
+        <item name="android:navigationBarColor">@color/red</item>
+    </style>
+
+    <style name="Theme.Kresticinolici" parent="Base.Theme.Kresticinolici" />
+</resources>
